@@ -1,11 +1,13 @@
 #include <iostream>
+#include <bitset>
 
 using namespace std;
 
 const int N = 1000;
 main()
 {
-    int i, j, a[N+1];
+    int i, j;
+    std::bitset<N+1> a;
     for(a[1] = 0, i = 2; i <= N; i++)
         a[i] = 1;
     for(i = 2; i <= N/2; i++)
